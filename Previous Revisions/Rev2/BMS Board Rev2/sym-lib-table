@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "BMS Board Rev2 Libs")(type Legacy)(uri "J:/Dropbox/Dropbox/Lab Projects/BMS Board/Rev2/BMS Board Rev2/BMS Board Rev2 Libs.lib")(options "")(descr ""))
+  (lib (name BMS-Board-Rev2-rescue)(type Legacy)(uri "${KIPRJMOD}/BMS Board Rev2-rescue.lib")(options "")(descr ""))
+)

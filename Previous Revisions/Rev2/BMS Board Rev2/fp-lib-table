@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "BMS Board Rev 2")(type KiCad)(uri "J:/Dropbox/Dropbox/Lab Projects/BMS Board/Rev2/BMS Board Rev2.pretty")(options "")(descr "Footprints for Rev2 BMS Board"))
+)
