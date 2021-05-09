@@ -10,8 +10,8 @@
 #define ACTIVE_IND PB0
 #define BUTTON PB1
 #define SHDN PB2
-#define BAT_POS PB3
-#define CURRENT_MEASURE PB4
+#define BAT_POS 3          //ADC3
+#define CURRENT_MEASURE 2  //ADC4
 
 #define OVER_CURRENT_LIMIT 1.0
 #define UNDER_VOLTAGE_THRESHOLD 3.0
@@ -99,8 +99,8 @@ void lowVoltageShutdown() {
 }
 
 void loop() {
-  if (readBatMultiple(50) > UNDER_VOLTAGE_THRESHOLD) {
-    if (readCurrentMultiple(50) < OVER_CURRENT_LIMIT) {
+  if (readBatMultiple(10) > UNDER_VOLTAGE_THRESHOLD) {
+    if (readCurrentMultiple(10) < OVER_CURRENT_LIMIT) {
       PORTB = (1 << SHDN) | (1 << ACTIVE_IND);
     } else {
       overCurrentShutdown();
